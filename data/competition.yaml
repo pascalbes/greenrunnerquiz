@@ -29,7 +29,7 @@ competition . international:
       - transport
 
 competition . international . présent:
-  question: International / national races
+  question: Internationale und nationale Rennen
   par défaut: non
 
 #################
@@ -41,7 +41,7 @@ competition . international . accommodation:
   unité: kgCO2e
 
 competition . international . accommodation . nb nights:
-  question: In total, in a year, how many nights do you spend on international or national competitions?
+  question: Wie viele Nächte verbringen Sie bei internationalen oder nationalen Wettbewerben im Jahr?
   par défaut: 0
   unité: days
 
@@ -61,45 +61,45 @@ competition . international . events:
 ## outdoor mid to long
 
 competition . international . events . outdoor mid to long:
-  titre: Road running race
+  titre: Straßenrennen Wettbewerb
   formule: 0.39 * number
   unité: kgCO2e
 
 competition . international . events . outdoor mid to long . number:
-  question: Road running race
+  question: Straßenrennen Wettbewerb
   par défaut: 0
 
 ## trail
 
 competition . international . events . trail:
-  titre: Trail running race
+  titre: Trailrunning-Wettbewerb
   formule: 0.39 * number
   unité: kgCO2e
 
 competition . international . events . trail . number:
-  question: Trail running race
+  question: Trailrunning-Wettbewerb
   par défaut: 0
 
 ## outdoor tranck and field
 
 competition . international . events . outdoor tranck and field:
-  titre: Outdoor track and field meeting
+  titre: Leichtathletik-Meeting im Freien
   formule: 0.82 * number
   unité: kgCO2e
 
 competition . international . events . outdoor tranck and field . number:
-  question: Outdoor track and field meeting
+  question: Leichtathletik-Meeting im Freien
   par défaut: 0
 
 ## indoor
 
 competition . international . events . indoor:
-  titre: Indoor track and field meeting
+  titre: Indoor-Leichtathletik-Meeting
   formule: 3.38 * number
   unité: kgCO2e
 
 competition . international . events . indoor . number:
-  question: Indoor track and field meeting
+  question: Indoor-Leichtathletik-Meeting
   par défaut: 0
 
 
@@ -180,7 +180,7 @@ competition . international . transport . plane . hours:
 ###########################################################
 
 competition . regional:
-  titre: Regional races
+  titre: Regionale Rennen
   unité: kgCO2e
   applicable si: présent
   formule:
@@ -209,45 +209,45 @@ competition . regional . events:
 ## outdoor mid to long
 
 competition . regional . events . outdoor mid to long:
-  titre: Outdoor mid to long distance competition
+  titre: Straßenrennen Wettbewerb
   formule: 0.2 * number
   unité: kgCO2e
 
 competition . regional . events . outdoor mid to long . number:
-  question: Outdoor mid to long distance competition
+  question: Straßenrennen Wettbewerb
   par défaut: 0
 
 ## trail
 
 competition . regional . events . trail:
-  titre: Trail running competition
+  titre: Trailrunning-Wettbewerb
   formule: 0.2 * number
   unité: kgCO2e
 
 competition . regional . events . trail . number:
-  question: Trail running competition
+  question: Trailrunning-Wettbewerb
   par défaut: 0
 
 ## outdoor tranck and field
 
 competition . regional . events . outdoor tranck and field:
-  titre: Outdoor track and field meeting
+  titre: Leichtathletik-Meeting im Freien
   formule: 0.36 * number
   unité: kgCO2e
 
 competition . regional . events . outdoor tranck and field . number:
-  question: Outdoor track and field meeting
+  question: Leichtathletik-Meeting im Freien
   par défaut: 0
 
 ## indoor
 
 competition . regional . events . indoor:
-  titre: Indoor track and field meeting
+  titre: Indoor-Leichtathletik-Meeting
   formule: 2.9 * number
   unité: kgCO2e
 
 competition . regional . events . indoor . number:
-  question: Indoor track and field meeting
+  question: Indoor-Leichtathletik-Meeting
   par défaut: 0
 
 
