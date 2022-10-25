@@ -29,7 +29,7 @@ digital . news:
         alors: constantes . numérique . actualités . jamais
 
 digital . news . type:
-  question: Do you follow the running / ahtletics news? (online and paper press, social networks)
+  question: Verfolgen Sie die Running / Ahtletics News ? (Online- und Papierpresse, soziale Netzwerke)
   formule: 
     une possibilité: 
       choix obligatoire: oui
@@ -39,11 +39,11 @@ digital . news . type:
         - never
 
 digital . news . type . frequently:
-  titre: Frequently
+  titre: Eifrig
 digital . news . type . from time to time:
-  titre: From time to time
+  titre: Von Zeit zu Zeit
 digital . news . type . never:
-  titre: Never
+  titre: Nie
 
 ####################
 ## sport network
@@ -61,7 +61,7 @@ digital . sport network:
         alors: 0
 
 digital . sport network . type:
-  question: Do you use Strava or a similar network to share your sports activity?
+  question: Nutzen Sie Strava oder ein ähnliches Netzwerk, um Ihre sportlichen Aktivitäten zu teilen?
   formule: 
     une possibilité: 
       choix obligatoire: oui
@@ -71,11 +71,11 @@ digital . sport network . type:
         - never
 
 digital . sport network . type . systematically:
-  titre: Yes, systematically
+  titre: Ja, systematisch
 digital . sport network . type . from time to time:
-  titre: From time to time
+  titre: Von Zeit zu Zeit
 digital . sport network . type . never:
-  titre: Never
+  titre: Nie
 
 ####################
 ## social media
@@ -93,7 +93,7 @@ digital . social media:
         alors: 0
 
 digital . social media . type:
-  question: Do you share your activity on other non specific social media (Instagram, Facebook, etc.)?
+  question: Teilen Sie Ihre Aktivitäten in anderen unspezifischen sozialen Medien (Instagram, Facebook usw.)?
   formule: 
     une possibilité: 
       choix obligatoire: oui
@@ -103,11 +103,11 @@ digital . social media . type:
         - never
 
 digital . social media . type . systematically:
-  titre: Yes, systematically
+  titre: Ja, systematisch
 digital . social media . type . from time to time:
-  titre: From time to time
+  titre: Von Zeit zu Zeit
 digital . social media . type . never:
-  titre: Never
+  titre: Nie
 
 ####################
 ## training platform
@@ -122,7 +122,7 @@ digital . training platform:
       - sinon: 0
 
 digital . training platform . use:
-  question: Do you use a dedicated training planning platform (Nolio, training tilt, science training, surge, ...)?
+  question: Nennen Sie einige Trainingsplattforms, um die Frage für alle klarer zu machen (Nolio, training tilt, science training, surge, ...)?
 
 
 #################
@@ -141,7 +141,7 @@ digital . streaming . running:
   formule: hours * 365 / 7 * 0.0345
 
 digital . streaming . running . hours:
-  question: In a week, how many hours do you spend streaming running / athletics content on the internet on average? (meeting or race replays, youtube videos, etc.)
+  question: Wie viel Zeit verbringen Sie wöchentlich damit Lauf- und Leichtathletik-Inhalte online zu streamen?
   par défaut: 0
   unité: hours
 
@@ -166,7 +166,7 @@ digital . streaming . sport events . olympics:
       - sinon: 0
 
 digital . streaming . sport events . olympics . présent:
-  question: Olympics
+  question: Olympiade
   par défaut: non
 
 ## sport events / world champ
@@ -179,7 +179,7 @@ digital . streaming . sport events . world champ:
       - sinon: 0
 
 digital . streaming . sport events . world champ . présent:
-  question: World championships
+  question: Weltmeisterschaften
   par défaut: non
 
 ## sport events / continental champ
@@ -192,7 +192,7 @@ digital . streaming . sport events . continental champ:
       - sinon: 0
 
 digital . streaming . sport events . continental champ . présent:
-  question: Continental championships
+  question: Kontinentale Meisterschaften
   par défaut: non
 
 ## sport events / marathons
@@ -205,7 +205,7 @@ digital . streaming . sport events . marathons:
       - sinon: 0
 
 digital . streaming . sport events . marathons . présent:
-  question: Marathons
+  question: Marathonläufe
   par défaut: non
 
 ## sport events / diamond league
