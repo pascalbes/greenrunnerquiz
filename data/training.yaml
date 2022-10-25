@@ -394,8 +394,8 @@ training . car . size:
         - SUV
 
 training . car . size . Klein:
-training . car . size . Middle:
-training . car . size . Sedan:
+training . car . size . Mittel:
+training . car . size . Limousine:
 training . car . size . SUV:
 
 ## type
