@@ -1,6 +1,6 @@
 equipement:
   abbréviation: equip.
-  titre: Equipment / Gear
+  titre: Ausrüstung
   description: |
 
   couleur: '#1faad3'
@@ -19,11 +19,11 @@ equipement:
 equipement . coefficient effort matériel:
   formule:
     variations: 
-      - si: effort = 'Low'
+      - si: effort = 'Niedrig'
         alors: effort faible
-      - si: effort = 'Medium'
+      - si: effort = 'Mittel'
         alors: effort moyen
-      - si: effort = 'Maximum'
+      - si: effort = 'Maximal'
         alors: effort maximum
 
 equipement . coefficient effort matériel . effort faible:
@@ -36,20 +36,20 @@ equipement . coefficient effort matériel . effort maximum:
   formule: 0.75
 
 equipement . coefficient effort matériel . effort:
-  question: What effort do you make to keep your equipment as long as possible?
-  par défaut: "'Moyen'"
+  question: Wie viel Aufwand betreiben Sie, um Ihre Ausrüstung so lange wie möglich zu halten?
+  par défaut: "'Mittel'"
   formule:
     une possibilité: 
       choix obligatoire: oui
       possibilités: 
-        - Low
-        - Medium
-        - Maximum
-      par défaut: Medium
+        - Niedrig
+        - Mittel
+        - Maximal
+      par défaut: Mittel
 
-equipement . coefficient effort matériel . effort . Low:
-equipement . coefficient effort matériel . effort . Medium:
-equipement . coefficient effort matériel . effort . Maximum:
+equipement . coefficient effort matériel . effort . Niedrig:
+equipement . coefficient effort matériel . effort . Mittel:
+equipement . coefficient effort matériel . effort . Maximal:
 
 # Achat Matériel
 
@@ -83,13 +83,13 @@ equipement . coefficient achat matériel . type:
       par défaut: acheté neuf
 
 equipement . coefficient achat matériel . type . acheté neuf:
-  titre: New
+  titre: Neu
 equipement . coefficient achat matériel . type . achat occasion:
-  titre: Second hand
+  titre: Gebraucht
 equipement . coefficient achat matériel . type . récupéré:
-  titre: Recovered
+  titre: Wiederhergestellt
 equipement . coefficient achat matériel . type . loué:
-  titre: Rent
+  titre: Gemietet
 
 ##########
 # Matériel
@@ -145,69 +145,73 @@ equipement . matériel . textile . short et collants . nombre:
 ##
 
 equipement . matériel . textile . chaussures:
-  titre: Shoes
+  titre: Schuhe
   icônes: 👟
   formule: constantes . equipement . chaussures * nombre
   unité: kgCO2e
 
 equipement . matériel . textile . chaussures . nombre:
-  question: Shoes
+  question: Schuhe
   par défaut: 0
 
 ##
 
 equipement . matériel . textile . survêtements:
-  titre: Tracksuit
+  titre: Trainingsanzug
   icônes: 🦺👖
   formule: constantes . equipement . survêtements * nombre
   unité: kgCO2e
 
 equipement . matériel . textile . survêtements . nombre:
-  question: Tracksuit
+  question: Trainingsanzug
   par défaut: 0
 
 ##
 
 equipement . matériel . textile . sous-vêtements:
-  titre: Underwear
+  titre: Unterwäsche
   icônes: 👟🩲
   formule: constantes . equipement . sous-vêtements * nombre
   unité: kgCO2e
 
-equipement . matériel . textile . sous-vêtements . nombre:  
+equipement . matériel . textile . sous-vêtements . nombre:
+  question: Unterwäsche
   par défaut: 0
 
 ##
 
 equipement . matériel . textile . manteaux:
-  titre: Coats
+  titre: Jacken
   icônes: 🧥
   formule: constantes . equipement . manteaux * nombre
   unité: kgCO2e
 
 equipement . matériel . textile . manteaux . nombre:
+  question: Jacken
   par défaut: 0
 
 ##
 
 equipement . matériel . textile . trousers:
-  titre: Running tights or trousers
+  titre: Laufleggings und -hosen
   icônes: 👖
   formule: constantes . equipement . trousers * nombre
   unité: kgCO2e
 
 equipement . matériel . textile . trousers . nombre:
+  question: Laufleggings und -hosen
   par défaut: 0
 
 ##
 
 equipement . matériel . textile . accessories:
-  titre: Other pieces of clothing (hats, gloves, etc.)
+  titre: Andere Kleidungsstücke (Mützen, Handschuhe usw.)
   icônes: 🧣 🧤 🧢
   formule: constantes . equipement . accessories * nombre
   unité: kgCO2e
 
 equipement . matériel . textile . accessories . nombre:
+  question: Andere Kleidungsstücke (Mützen, Handschuhe usw.)
   par défaut: 0
 
 ##
@@ -226,47 +230,47 @@ equipement . matériel . elec:
 ##
 
 equipement . matériel . elec . recovery:
-  titre: Electrical recovery device
+  titre: Elektrisches Stimulationsgerät
   formule: constantes . equipement . recovery * nombre
   unité: kgCO2e
 
 equipement . matériel . elec . recovery . nombre:
-  question: Electrical recovery device
+  question: Elektrisches Stimulationsgerät
   par défaut: 0
 
 ##
 
 equipement . matériel . elec . clockwatch:
-  titre: Basic watch
+  titre: Einfache Armbanduhr
   icônes: ⌚
   formule: constantes . equipement . clockwatch * nombre
   unité: kgCO2e
 
 equipement . matériel . elec . clockwatch . nombre:
-  question: Basic watch
+  question: Einfache Armbanduhr
   par défaut: 0
 
 ##
 
 equipement . matériel . elec . gps watch:
-  titre: Running watch
+  titre: GPS Laufuhr
   icônes: ⌚
   formule: constantes . equipement . gps watch * nombre
   unité: kgCO2e
 
 equipement . matériel . elec . gps watch . nombre:
-  question: Running watch
+  question: GPS Laufuhr
   par défaut: 0
 
 ##
 
 equipement . matériel . elec . treadmill:
-  titre: Treadmill
+  titre: Laufband
   formule: constantes . equipement . treadmill * nombre
   unité: kgCO2e
 
 equipement . matériel . elec . treadmill . nombre:
-  question: Treadmill
+  question: Laufband
   par défaut: 0
 
 # washing
@@ -276,6 +280,6 @@ equipement . matériel . washing:
   unité: kgCO2e
   
 equipement . matériel . washing . number:
-  question: How much more do you use your washing machine to clean your running clothes? (number of additional use per week)
+  question: Wie oft nutzt du deine Waschmaschine, um deine Laufkleidung zu reinigen? (Anzahl zusätzlicher Nutzungen pro Woche)
   par défaut: 0
-  unité: washing machine
+  unité: waschmaschine
