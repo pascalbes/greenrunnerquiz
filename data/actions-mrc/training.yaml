@@ -1,0 +1,42 @@
+training . entrainement vélo plutôt que voiture:
+  titre: Bike or walk to your training sessions
+  formule:
+    somme:
+      - training . training camp . transport . voiture
+      - training . training camp . transport . deux-roues motorisé
+      - training . daily . empreinte transport . voiture
+      - training . daily . empreinte transport . deux-roues motorisé
+      - training . exceptional . empreinte . voiture
+      - training . exceptional . empreinte . deux-roues motorisé
+
+  description: |
+    
+  unité: kgCO2e
+
+training . training camp by train:
+  titre: Choose training camps reachable by train
+  formule: total footprint by plane - total footprint by plane * constantes . empreinte transport . train / constantes . empreinte transport . plane
+
+  description: |
+    
+  unité: kgCO2e
+
+training . training camp by train . total footprint by plane:
+  formule:
+    somme:
+      - training . training camp . transport . plane
+      # - frankfurt . preparation . transport . plane
+
+equipement . keep it longer:
+  titre: Keep you equipment longer
+  formule: equipement - equipement . matériel * equipement . coefficient achat matériel * equipement . coefficient effort matériel . effort maximum
+  description: |
+    
+  unité: kgCO2e
+
+competition . closer to home:
+  titre: Compete closer to home
+  formule: competition . international . transport . plane - competition . international . transport . plane / constantes . empreinte transport . train / constantes . empreinte transport . plane
+  description: |
+    
+  unité: kgCO2e

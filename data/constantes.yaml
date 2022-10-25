@@ -1,0 +1,301 @@
+constantes:
+
+constantes . nb mois pratique: 10
+constantes . nb mois matches: 8
+constantes . nb semaines pratique: 42
+constantes . diffusion match: 2
+
+## Lieux
+constantes . contexte:
+constantes . contexte . bar:
+  formule: 0.067
+  unité: kgCO2e
+constantes . contexte . maison compagnie:
+  formule: 0.2
+  unité: kgCO2e
+constantes . contexte . amis:
+  formule: 0.2
+  unité: kgCO2e
+constantes . contexte . maison seul:
+  formule: 1
+  unité: kgCO2e
+constantes . contexte . gym:
+  formule: 0.32
+
+  unité: kgCO2e
+
+  ## Numérique
+constantes . numérique:
+constantes . numérique . télévision:
+  formule: 0.045
+  unité: kgCO2e
+constantes . numérique . tablette:
+  formule: 0.035
+  unité: kgCO2e
+constantes . numérique . ordinateur:
+  formule: 0.037
+  unité: kgCO2e
+constantes . numérique . téléphone:
+  formule: 0.032
+  unité: kgCO2e
+
+constantes . numérique . actualités:
+constantes . numérique . actualités . assidument:
+  formule: 10.15
+  unité: kgCO2e
+constantes . numérique . actualités . de temps en temps:
+  formule: 1.73
+  unité: kgCO2e
+constantes . numérique . actualités . jamais:
+  formule: 0
+  unité: kgCO2e
+
+## equipement
+constantes . equipement:
+
+constantes . equipement . chaussures:
+  formule: 18.7
+  unité: kgCO2e
+constantes . equipement . sous-vêtements:
+  formule: 3.23
+  unité: kgCO2e
+constantes . equipement . survêtements:
+  formule: 31.5
+  unité: kgCO2e
+constantes . equipement . maillots:
+  formule: 4.62
+  unité: kgCO2e
+constantes . equipement . short et collants:
+  formule: 3.22
+  unité: kgCO2e
+constantes . equipement . trousers:
+  formule: 10.26
+  unité: kgCO2e
+constantes . equipement . manteaux:
+  formule: 30.6
+  unité: kgCO2e
+constantes . equipement . accessories:
+  formule: 0.89
+  unité: kgCO2e
+
+
+
+constantes . equipement . echarpes:
+  formule: 1.6
+  unité: kgCO2e
+
+constantes . equipement . petits équipements:
+  formule: 2.156
+  unité: kgCO2e
+
+
+
+
+
+
+
+constantes . equipement . recovery:
+  formule: 16.5
+  unité: kgCO2e
+constantes . equipement . clockwatch:
+  formule: 8.8
+  unité: kgCO2e
+constantes . equipement . gps watch:
+  formule: 9.72
+  unité: kgCO2e
+constantes . equipement . treadmill:
+  formule: 264.211
+  unité: kgCO2e
+
+
+## Lieux
+
+constantes . empreinte lieu:
+constantes . empreinte lieu . outside:
+  formule: 0
+  unité: kgCO2e
+constantes . empreinte lieu . ontrack outdoor light:
+  formule: 0.153
+  unité: kgCO2e
+constantes . empreinte lieu . ontrack outdoor unlight:
+  formule: 0
+  unité: kgCO2e
+constantes . empreinte lieu . ontrack indoor light:
+  formule: 2.56
+  unité: kgCO2e
+constantes . empreinte lieu . ontrack indoor unlight:
+  formule: 2.51
+  unité: kgCO2e
+constantes . empreinte lieu . treadmill:
+  formule: 0.085
+  unité: kgCO2e
+
+## Transports
+
+constantes . empreinte transport:
+constantes . empreinte transport . doux:
+  formule: 0
+  unité: kgCO2e
+
+constantes . empreinte transport . transports en commun:
+  formule: 1.269
+  unité: kgCO2e
+constantes . empreinte transport . transports en commun heure:
+  formule: 1.269
+  unité: kgCO2e
+
+constantes . empreinte transport . deux-roues motorisé:
+  formule: 8.028
+  unité: kgCO2e
+
+constantes . empreinte transport . train:
+  formule: 1.1712
+  unité: kgCO2e
+constantes . empreinte transport . train heure:
+  formule: 1.1712
+  unité: kgCO2e
+
+constantes . empreinte transport . plane:
+  formule: 106.15
+  unité: kgCO2e
+constantes . empreinte transport . plane heure:
+  formule: 106.15
+  unité: kgCO2e
+
+constantes . empreinte transport . car:
+  formule:
+    variations:
+      - si: training . car = oui
+        alors: training . car . footprint by hour
+      - sinon: 13.08 
+  unité: kgCO2e
+constantes . empreinte transport . car heure:
+  formule:
+    variations:
+      - si: training . car = oui
+        alors: training . car . footprint by hour
+      - sinon: 13.08
+  unité: kgCO2e
+
+constantes . empreinte transport . minibus:
+  formule: 0.218 ## à confirmer
+  unité: kgCO2e
+
+
+## food
+constantes . food:
+constantes . food . livraison:
+  formule: 0.2021384
+  unité: kgCO2e
+constantes . food . emporter:
+  formule: 0.0610184
+  unité: kgCO2e
+constantes . food . maison:
+  formule: 0
+  unité: kgCO2e
+constantes . food . barres:
+  formule: 7.72
+  unité: kgCO2e
+
+
+constantes . food . energy bars:
+  formule: 0.23
+  unité: kgCO2e
+constantes . food . energy drinks:
+  formule: 0.51
+  unité: kgCO2e
+constantes . food . fruits:
+  formule: 0.13
+  unité: kgCO2e
+constantes . food . water bottle:
+  formule: 0.28
+  unité: kgCO2e
+constantes . food . prerace cake:
+  formule: 1.97
+  unité: kgCO2e
+
+## Boissons
+
+constantes . boissons:
+constantes . boissons . boissons:
+  formule: 0.51
+  unité: kgCO2e
+constantes . boissons . alcool:
+  formule: 1.115
+  unité: kgCO2e
+constantes . boissons . bière:
+  formule: 1.09
+  unité: kgCO2e
+constantes . boissons . vin:
+  formule: 1.14
+  unité: kgCO2e
+constantes . boissons . spiritueux:
+  formule: 1.25
+  unité: kgCO2e
+constantes . boissons . sodas:
+  formule: 0.801
+  unité: kgCO2e
+constantes . boissons . jus:
+  formule: 0.801
+  unité: kgCO2e
+constantes . boissons . eau en bouteille:
+  formule: 0.28
+  unité: kgCO2e
+
+## Pratique
+
+
+
+constantes . pratique:
+constantes . pratique . loisir:
+constantes . pratique . loisir . exterieur:
+  formule: 0.61 ## à confirmer
+  unité: kgCO2e
+constantes . pratique . loisir . exterieur herbe:
+  formule: 0.61 ## à confirmer
+  unité: kgCO2e
+constantes . pratique . loisir . intérieur:
+  formule: 0.61 ## à confirmer
+  unité: kgCO2e
+
+constantes . pratique . futsal:
+constantes . pratique . futsal . D1 futsal:
+constantes . pratique . futsal . D1 futsal . FE:
+  formule: 4.58
+  unité: kgCO2e
+
+constantes . pratique . futsal . D2 futsal:
+constantes . pratique . futsal . D2 futsal . FE:
+  formule: 3.53
+  unité: kgCO2e
+
+constantes . pratique . futsal . régional:
+constantes . pratique . futsal . régional . FE:
+  formule: 3.23
+  unité: kgCO2e
+
+constantes . pratique . futsal . district:
+constantes . pratique . futsal . district . FE:
+  formule: 3.23
+  unité: kgCO2e
+
+constantes . pratique . futsal . club hors compétition:
+constantes . pratique . futsal . club hors compétition . FE:
+  formule: 3.23
+  unité: kgCO2e
+
+## Distances
+
+constantes . pratique . distance:
+constantes . pratique . distance . nationale:
+  formule: 800
+  unité: km
+constantes . pratique . distance . régionale:
+  formule: 300
+  unité: km
+constantes . pratique . distance . quart de pays:
+  formule: 400
+  unité: km
+constantes . pratique . distance . départementale:
+  formule: 100
+  unité: km

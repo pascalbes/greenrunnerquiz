@@ -1,0 +1,199 @@
+crosstraining:
+  titre: Cross-Training
+  abbréviation: cross
+  description: |
+    
+  couleur: '#cd3581'
+  icônes: 🏋️‍♀️ ⛷ 🚴‍♀️
+  formule:
+    somme:
+      - gym
+      - winter
+  unité: kgCO2e
+
+
+############
+## Gym
+############
+
+crosstraining . gym:
+  icônes: 🏋️‍♀️
+  formule:
+    somme:
+      - training
+      - transport
+  applicable si: présent
+
+crosstraining . gym . présent:
+  question: Gym
+  par défaut: non
+
+## training gym
+#########
+
+crosstraining . gym . training:
+  formule: duration * constantes . contexte . gym
+
+crosstraining . gym . training . duration:
+  question: On average, how long do you spend in the gym every month?
+  par défaut: 0
+  unité: hours
+
+## transport gym
+#########
+
+crosstraining . gym . transport:
+  formule: empreinte transport * 365 / 12
+  unité: kgCO2e
+
+crosstraining . gym . transport . empreinte transport:
+  unité: kgCO2e/training
+  formule:
+    somme:
+      - doux
+      - voiture
+      - transports en commun
+      - deux-roues motorisé
+
+
+## Marche
+
+crosstraining . gym . transport . empreinte transport . doux:
+  titre: Bike, scooter, feet
+  formule: constantes . empreinte transport . doux * hours
+  unité: kgCO2e
+
+crosstraining . gym . transport . empreinte transport . doux . hours:
+  question: Bike, scooter, feet
+  par défaut: 0
+
+## Voiture Elec
+
+crosstraining . gym . transport . empreinte transport . voiture:
+  titre: Car
+  formule: constantes . empreinte transport . car * hours
+  unité: kgCO2e
+
+crosstraining . gym . transport . empreinte transport . voiture . hours:
+  question: Car
+  par défaut: 0
+
+## Transports en commun
+
+crosstraining . gym . transport . empreinte transport . transports en commun:
+  titre: Public transport
+  formule: constantes . empreinte transport . transports en commun * hours
+  unité: kgCO2e
+
+crosstraining . gym . transport . empreinte transport . transports en commun . hours:
+  question: Public transport
+  par défaut: 0
+
+## Deux-roues motorisé
+
+crosstraining . gym . transport . empreinte transport . deux-roues motorisé:
+  titre: Motorcycle
+  formule: constantes . empreinte transport . deux-roues motorisé * hours
+  unité: kgCO2e
+
+crosstraining . gym . transport . empreinte transport . deux-roues motorisé . hours:
+  question: Motorcycle
+  par défaut: 0
+
+
+############
+## Ski
+############
+
+
+crosstraining . ski:
+  icônes: ⛷
+
+crosstraining . ski . présent:
+  question: Ski moutaineering 
+  par défaut: non
+
+############
+## cross-country
+############
+
+
+crosstraining . cross-country:
+  icônes: 🏔
+  
+crosstraining . cross-country . présent:
+  question: Cross-country 
+  par défaut: non
+
+## winter season transport
+#########
+
+crosstraining . winter:
+  applicable si: 
+    une de ces conditions:
+      - crosstraining . cross-country . présent
+      - crosstraining . ski . présent
+  formule: transport
+
+crosstraining . winter . transport:
+  formule: empreinte transport
+  unité: kgCO2e
+
+crosstraining . winter . transport . empreinte transport:
+  unité: kgCO2e/training
+  formule:
+    somme:
+      - doux
+      - voiture
+      - transports en commun
+      - deux-roues motorisé
+
+
+## Marche
+
+crosstraining . winter . transport . empreinte transport . doux:
+  titre: Bike, scooter, feet
+  formule: constantes . empreinte transport . doux * hours
+  unité: kgCO2e
+
+crosstraining . winter . transport . empreinte transport . doux . hours:
+  question: Bike, scooter, feet
+  par défaut: 0
+
+## Voiture
+
+crosstraining . winter . transport . empreinte transport . voiture:
+  titre: Car
+  formule: constantes . empreinte transport . car * hours
+  unité: kgCO2e
+
+crosstraining . winter . transport . empreinte transport . voiture . hours:
+  question: Car
+  par défaut: 0
+
+## Transports en commun
+
+crosstraining . winter . transport . empreinte transport . transports en commun:
+  titre: Public transport
+  formule: constantes . empreinte transport . transports en commun * hours
+  unité: kgCO2e
+
+crosstraining . winter . transport . empreinte transport . transports en commun . hours:
+  question: Public transport
+  par défaut: 0
+
+## Deux-roues motorisé
+
+crosstraining . winter . transport . empreinte transport . deux-roues motorisé:
+  titre: Motorcycle
+  formule: constantes . empreinte transport . deux-roues motorisé * hours
+  unité: kgCO2e
+
+crosstraining . winter . transport . empreinte transport . deux-roues motorisé . hours:
+  question: Motorcycle
+  par défaut: 0
+
+
+
+
+

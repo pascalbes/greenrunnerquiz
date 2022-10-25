@@ -1,0 +1,222 @@
+digital: 
+  titre: Digital
+  couleur: '#00c0b3'
+  icônes: 📺
+  description: | 
+    
+  formule: 
+    somme:
+    - news
+    - sport network
+    - social media
+    - training platform
+    - streaming
+  unité: kgCO2e
+
+####################
+## news
+####################
+
+digital . news:
+  unité: kgCO2e
+  formule:
+    variations: 
+      - si: type = 'frequently'
+        alors: constantes . numérique . actualités . assidument
+      - si: type = 'from time to time'
+        alors: constantes . numérique . actualités . de temps en temps
+      - si: type = 'never'
+        alors: constantes . numérique . actualités . jamais
+
+digital . news . type:
+  question: Do you follow the running / ahtletics news? (online and paper press, social networks)
+  formule: 
+    une possibilité: 
+      choix obligatoire: oui
+      possibilités:
+        - frequently
+        - from time to time
+        - never
+
+digital . news . type . frequently:
+  titre: Frequently
+digital . news . type . from time to time:
+  titre: From time to time
+digital . news . type . never:
+  titre: Never
+
+####################
+## sport network
+####################
+
+digital . sport network:
+  unité: kgCO2e
+  formule:
+    variations: 
+      - si: type = 'systematically'
+        alors: 1.66
+      - si: type = 'from time to time'
+        alors: 0.28
+      - si: type = 'never'
+        alors: 0
+
+digital . sport network . type:
+  question: Do you use Strava or a similar network to share your sports activity?
+  formule: 
+    une possibilité: 
+      choix obligatoire: oui
+      possibilités:
+        - systematically
+        - from time to time
+        - never
+
+digital . sport network . type . systematically:
+  titre: Yes, systematically
+digital . sport network . type . from time to time:
+  titre: From time to time
+digital . sport network . type . never:
+  titre: Never
+
+####################
+## social media
+####################
+
+digital . social media:
+  unité: kgCO2e
+  formule:
+    variations: 
+      - si: type = 'systematically'
+        alors: 1.67
+      - si: type = 'from time to time'
+        alors: 0.28
+      - si: type = 'never'
+        alors: 0
+
+digital . social media . type:
+  question: Do you share your activity on other non specific social media (Instagram, Facebook, etc.)?
+  formule: 
+    une possibilité: 
+      choix obligatoire: oui
+      possibilités:
+        - systematically
+        - from time to time
+        - never
+
+digital . social media . type . systematically:
+  titre: Yes, systematically
+digital . social media . type . from time to time:
+  titre: From time to time
+digital . social media . type . never:
+  titre: Never
+
+####################
+## training platform
+####################
+
+digital . training platform:
+  unité: kgCO2e
+  formule:
+    variations: 
+      - si: use = oui
+        alors: 5.8
+      - sinon: 0
+
+digital . training platform . use:
+  question: Do you use a dedicated training planning platform (Nolio, training tilt, science training, surge, ...)?
+
+
+#################
+#### streaming
+#################
+
+digital . streaming:
+  formule: 
+    somme:
+      - running
+      - sport events
+
+## running
+
+digital . streaming . running:
+  formule: hours * 365 / 7 * 0.0345
+
+digital . streaming . running . hours:
+  question: In a week, how many hours do you spend streaming running / athletics content on the internet on average? (meeting or race replays, youtube videos, etc.)
+  par défaut: 0
+  unité: hours
+
+## sport events
+
+digital . streaming . sport events:
+  formule:
+    somme:
+      - olympics
+      - world champ
+      - continental champ
+      - marathons
+      - diamond league
+
+## sport events / olympics
+
+digital . streaming . sport events . olympics:
+  formule:
+    variations: 
+      - si: présent
+        alors: 0.045
+      - sinon: 0
+
+digital . streaming . sport events . olympics . présent:
+  question: Olympics
+  par défaut: non
+
+## sport events / world champ
+
+digital . streaming . sport events . world champ:
+  formule:
+    variations: 
+      - si: présent
+        alors: 0.045
+      - sinon: 0
+
+digital . streaming . sport events . world champ . présent:
+  question: World championships
+  par défaut: non
+
+## sport events / continental champ
+
+digital . streaming . sport events . continental champ:
+  formule:
+    variations: 
+      - si: présent
+        alors: 0.045
+      - sinon: 0
+
+digital . streaming . sport events . continental champ . présent:
+  question: Continental championships
+  par défaut: non
+
+## sport events / marathons
+
+digital . streaming . sport events . marathons:
+  formule:
+    variations: 
+      - si: présent
+        alors: 0.045
+      - sinon: 0
+
+digital . streaming . sport events . marathons . présent:
+  question: Marathons
+  par défaut: non
+
+## sport events / diamond league
+
+digital . streaming . sport events . diamond league:
+  formule:
+    variations: 
+      - si: présent
+        alors: 0.045
+      - sinon: 0
+
+digital . streaming . sport events . diamond league . présent:
+  question: Diamond League
+  par défaut: non
