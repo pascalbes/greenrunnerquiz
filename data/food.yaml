@@ -45,7 +45,7 @@ food . type repas . carnivore:
   titre: Fleischesser
 
 food . calories:
-  question: Compared to a person of your size and gender, how many more Kcal do you eat daily?
+  question: Im Vergleich zu einer Person Ihrer Größe und Ihres Geschlechts, wie viele Kcal mehr essen Sie täglich?
   suggestions: 
     normal: 0
     etwas mehr: 200
