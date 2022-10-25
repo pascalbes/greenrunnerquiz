@@ -121,56 +121,56 @@ competition . international . transport:
 ## Voiture
 
 competition . international . transport . voiture:
-  titre: Car
+  titre: Auto
   formule: constantes . empreinte transport . car * hours * 2
   unité: kgCO2e
 
 competition . international . transport . voiture . hours:
-  question: Car
+  question: Auto
   par défaut: 0
 
 ## Public transport
 
 competition . international . transport . transports en commun:
-  titre: Public transport
+  titre: Öffentlicher Verkehr
   formule: constantes . empreinte transport . transports en commun * hours * 2
   unité: kgCO2e
 
 competition . international . transport . transports en commun . hours:
-  question: Public transport
+  question: Öffentlicher Verkehr
   par défaut: 0
 
 ## Deux-roues motorisé
 
 competition . international . transport . deux-roues motorisé:
-  titre: Motorcycle
+  titre: Motorrad
   formule: constantes . empreinte transport . deux-roues motorisé * hours * 2
   unité: kgCO2e
 
 competition . international . transport . deux-roues motorisé . hours:
-  question: Motorcycle
+  question: Motorrad
   par défaut: 0
 
 ## Train
 
 competition . international . transport . train:
-  titre: Train
+  titre: Zug
   formule: constantes . empreinte transport . train * hours * 2
   unité: kgCO2e
 
 competition . international . transport . train . hours:
-  question: Train
+  question: Zug
   par défaut: 0
 
 ## Plane
 
 competition . international . transport . plane:
-  titre: Plane
+  titre: Flugzeug
   formule: constantes . empreinte transport . plane * hours * 2
   unité: kgCO2e
 
 competition . international . transport . plane . hours:
-  question: Plane
+  question: Flugzeug
   par défaut: 0
 
 
@@ -268,56 +268,56 @@ competition . regional . transport:
 ## Marche
 
 competition . regional . transport . doux:
-  titre: Bike, scooter, feet
+  titre: Fahrrad, Roller, Fuß
   formule: constantes . empreinte transport . doux * hours * 2
   unité: kgCO2e
 
 competition . regional . transport . doux . hours:
-  question: Bike, scooter, feet
+  question: Fahrrad, Roller, Fuß
   par défaut: 0
 
 ## Voiture
 
 competition . regional . transport . voiture:
-  titre: Car
+  titre: Auto
   formule: constantes . empreinte transport . car * hours * 2
   unité: kgCO2e
 
 competition . regional . transport . voiture . hours:
-  question: Car
+  question: Auto
   par défaut: 0
 
 ## Public transport
 
 competition . regional . transport . transports en commun:
-  titre: Public transport
+  titre: Öffentlicher Verkehr
   formule: constantes . empreinte transport . transports en commun * hours * 2
   unité: kgCO2e
 
 competition . regional . transport . transports en commun . hours:
-  question: Public transport
+  question: Öffentlicher Verkehr
   par défaut: 0
 
 ## Deux-roues motorisé
 
 competition . regional . transport . deux-roues motorisé:
-  titre: Motorcycle
+  titre: Motorrad
   formule: constantes . empreinte transport . deux-roues motorisé * hours * 2
   unité: kgCO2e
 
 competition . regional . transport . deux-roues motorisé . hours:
-  question: Motorcycle
+  question: Motorrad
   par défaut: 0
 
 ## Train
 
 competition . regional . transport . train:
-  titre: Train
+  titre: Zug
   formule: constantes . empreinte transport . train * hours * 2
   unité: kgCO2e
 
 competition . regional . transport . train . hours:
-  question: Train
+  question: Zug
   par défaut: 0
 
 
@@ -355,12 +355,12 @@ competition . hours:
 ## energy bars
 
 competition . food . energy bars:
-  titre: Energy bars / gels
+  titre: Energieriegel / -gele
   icônes: 🍫
   formule: constantes . food . energy bars * number
   unité: kgCO2e
 competition . food . energy bars . number:
-  question: Energy bars / gels
+  question: Energieriegel / -gele
   par défaut: 0
   
 ## energy drinks
@@ -377,21 +377,21 @@ competition . food . energy drinks . number:
 ## fruits
 
 competition . food . fruits:
-  titre: Fruits
+  titre: Obsts
   icônes: 🍎 🍐 🍊
   formule: constantes . food . fruits * number
   unité: kgCO2e
 competition . food . fruits . number:
-  question: Fruits
+  question: Obsts
   par défaut: 0
   
 ## water bottle
 
 competition . food . water bottle:
-  titre: Water bottle
+  titre: Wasserflasche
   icônes: 🥛
   formule: constantes . food . water bottle * number
   unité: kgCO2e
 competition . food . water bottle . number:
-  question: Water bottle
+  question: Wasserflasche
   par défaut: 0
