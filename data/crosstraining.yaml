@@ -1,5 +1,5 @@
 crosstraining:
-  titre: Cross-Training
+  titre: Verwandte Aktivitäten
   abbréviation: cross
   description: |
     
@@ -25,7 +25,7 @@ crosstraining . gym:
   applicable si: présent
 
 crosstraining . gym . présent:
-  question: Gym
+  question: Fitness
   par défaut: non
 
 ## training gym
@@ -35,7 +35,7 @@ crosstraining . gym . training:
   formule: duration * constantes . contexte . gym
 
 crosstraining . gym . training . duration:
-  question: On average, how long do you spend in the gym every month?
+  question: Wie lange verbringen Sie durchschnittlich jeden Monat im Fitnessstudio?
   par défaut: 0
   unité: hours
 
@@ -110,7 +110,7 @@ crosstraining . ski:
   icônes: ⛷
 
 crosstraining . ski . présent:
-  question: Ski moutaineering 
+  question: Skitouren 
   par défaut: non
 
 ############
@@ -122,7 +122,7 @@ crosstraining . cross-country:
   icônes: 🏔
   
 crosstraining . cross-country . présent:
-  question: Cross-country 
+  question: Ski-Langlauf 
   par défaut: non
 
 ## winter season transport
