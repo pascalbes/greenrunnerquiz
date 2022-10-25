@@ -48,9 +48,9 @@ food . calories:
   question: Compared to a person of your size and gender, how many more Kcal do you eat daily?
   suggestions: 
     normal: 0
-    ein bisschen mehr: 200
+    etwas mehr: 200
     viel mehr: 800
-    Wie ein Sieger: 1500
+    champion's diät: 1500
   unité: kcal
 
 food . empreinte vegan:
