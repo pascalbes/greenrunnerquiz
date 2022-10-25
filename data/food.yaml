@@ -22,7 +22,7 @@ food:
 
 
 food . type repas:
-  question: Which diet are you on?
+  question: Welche ist Ihre Ernärungsweise?
   formule:
     une possibilité: 
       choix obligatoire: oui
@@ -37,17 +37,20 @@ food . type repas:
 
 food . type repas . vegan:
 food . type repas . vegetarian:
+  titre: Vegetarisch
 food . type repas . flexitarian:
+  titre: Flexitarisch
 food . type repas . omnivore: oui
 food . type repas . carnivore:
+  titre: Fleischesser
 
 food . calories:
   question: Compared to a person of your size and gender, how many more Kcal do you eat daily?
   suggestions: 
     normal: 0
-    a bit more: 200
-    way more: 800
-    like a champion: 1500
+    ein bisschen mehr: 200
+    viel mehr: 800
+    Wie ein Sieger: 1500
   unité: kcal
 
 food . empreinte vegan:
