@@ -280,6 +280,6 @@ equipement . matériel . washing:
   unité: kgCO2e
   
 equipement . matériel . washing . number:
-  question: Wie oft nutzt du deine Waschmaschine, um deine Laufkleidung zu reinigen? (Anzahl zusätzlicher Nutzungen pro Woche)
+  question: Wie oft nutzen Sie Ihre Waschmaschine, um Ihre Laufkleidung zu waschen? (Anzahl zusätzlicher Nutzungen pro Woche)
   par défaut: 0
   unité: waschmaschine
