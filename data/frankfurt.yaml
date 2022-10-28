@@ -47,7 +47,7 @@ frankfurt . preparation . races:
 frankfurt . preparation . races . nb:
   question: An wie vielen Vorbereitungsrennen haben Sie teilgenommen?
   par défaut: 0
-  unité: races
+  unité: Rennen
 
 #################
 #### transport

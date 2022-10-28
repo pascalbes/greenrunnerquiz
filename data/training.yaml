@@ -480,7 +480,7 @@ training . car . thermal . footprint by litre:
 
 training . car . thermal . petrol:
   applicable si: type != 'Electric'
-  question: What type of petrol is used?
+  question: Welche Benzinsorte wird verwendet?
   par défaut: "'essence E5 ou E10'"
   formule:
     une possibilité:
@@ -491,11 +491,11 @@ training . car . thermal . petrol:
         - essence E85
 
 training . car . thermal . petrol . gazole B7 ou B10:
-  titre: Gazole (B7 ou B10)
+  titre: Diesel (B7 ou B10)
 training . car . thermal . petrol . essence E5 ou E10:
-  titre: Essence (E5 ou E10)
+  titre: Benzin (E5 ou E10)
 training . car . thermal . petrol . essence E85:
-  titre: Essence E85 (biocarburants)
+  titre: Benzin E85 (Biokraftstoffe)
 
 ## hybrid
 

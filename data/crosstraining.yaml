@@ -88,6 +88,7 @@ crosstraining . transport . empreinte transport . deux-roues motorisé . hours:
 ############
 
 crosstraining . cycling:
+  titre: Radfahren
   icônes: 🚴‍♂️
 
 crosstraining . cycling . présent:
@@ -95,6 +96,7 @@ crosstraining . cycling . présent:
   par défaut: non
 
 crosstraining . other:
+  titre: Andere
   
 crosstraining . other . présent:
   question: Andere
@@ -105,6 +107,7 @@ crosstraining . other . présent:
 ############
 
 crosstraining . gym:
+  titre: Fitness
   icônes: 🏋️‍♀️
   formule:
     somme:
@@ -133,6 +136,7 @@ crosstraining . gym . training . duration:
 
 
 crosstraining . ski:
+  titre: Skitouren 
   icônes: ⛷
 
 crosstraining . ski . présent:
@@ -145,6 +149,7 @@ crosstraining . ski . présent:
 
 
 crosstraining . cross-country:
+  titre: Ski-Langlauf
   icônes: 🏔
   
 crosstraining . cross-country . présent:

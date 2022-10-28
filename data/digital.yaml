@@ -159,6 +159,7 @@ digital . streaming . sport events:
 ## sport events / olympics
 
 digital . streaming . sport events . olympics:
+  titre: Olympiade
   formule:
     variations: 
       - si: présent
@@ -172,6 +173,7 @@ digital . streaming . sport events . olympics . présent:
 ## sport events / world champ
 
 digital . streaming . sport events . world champ:
+  titre: Weltmeisterschaften
   formule:
     variations: 
       - si: présent
@@ -185,6 +187,7 @@ digital . streaming . sport events . world champ . présent:
 ## sport events / continental champ
 
 digital . streaming . sport events . continental champ:
+  titre: Kontinentale Meisterschaften
   formule:
     variations: 
       - si: présent
@@ -198,6 +201,7 @@ digital . streaming . sport events . continental champ . présent:
 ## sport events / marathons
 
 digital . streaming . sport events . marathons:
+  titre: Marathonläufe
   formule:
     variations: 
       - si: présent
@@ -211,6 +215,7 @@ digital . streaming . sport events . marathons . présent:
 ## sport events / diamond league
 
 digital . streaming . sport events . diamond league:
+  titre: Diamond League
   formule:
     variations: 
       - si: présent

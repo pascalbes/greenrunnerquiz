@@ -70,7 +70,7 @@ equipement . coefficient achat matériel:
           valeur: 0.25
 
 equipement . coefficient achat matériel . type:
-  question: 'The equipment you use is usually…'
+  question: 'Die Ausrüstung, die Sie verwenden, ist in der Regel…'
   par défaut: "'acheté neuf'"
   formule:
     une possibilité: 

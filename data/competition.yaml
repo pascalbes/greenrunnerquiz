@@ -19,7 +19,7 @@ competition:
 ###########################################################
 
 competition . international:
-  titre: International / national races
+  titre: Internationale und nationale Rennen
   unité: kgCO2e
   applicable si: présent
   formule:
@@ -43,7 +43,7 @@ competition . international . accommodation:
 competition . international . accommodation . nb nights:
   question: Wie viele Nächte verbringen Sie bei internationalen oder nationalen Wettbewerben im Jahr?
   par défaut: 0
-  unité: days
+  unité: Tage
 
 #################
 #### events
