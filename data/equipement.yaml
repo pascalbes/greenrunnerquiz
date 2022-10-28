@@ -19,37 +19,37 @@ equipement:
 equipement . coefficient effort matériel:
   formule:
     variations: 
-      - si: effort = 'Niedrig'
+      - si: effort = 'Nie'
         alors: effort faible
-      - si: effort = 'Mittel'
+      - si: effort = 'Oft'
         alors: effort moyen
-      - si: effort = 'Maximal'
+      - si: effort = 'Immer'
         alors: effort maximum
 
 equipement . coefficient effort matériel . effort faible:
-  formule: 1.5
+  formule: 1.33
 
 equipement . coefficient effort matériel . effort moyen:
   formule: 1
 
 equipement . coefficient effort matériel . effort maximum:
-  formule: 0.75
+  formule: 0.67
 
 equipement . coefficient effort matériel . effort:
-  question: Wie viel Aufwand betreiben Sie, um Ihre Ausrüstung so lange wie möglich zu halten?
-  par défaut: "'Mittel'"
+  question: Benutzen Sie Ihre Sportausrüstung bis an ihre Grenzen (bis sie unbrauchbar sind und nicht mehr funktionieren)?
+  par défaut: "'Oft'"
   formule:
     une possibilité: 
       choix obligatoire: oui
       possibilités: 
-        - Niedrig
-        - Mittel
-        - Maximal
-      par défaut: Mittel
+        - Nie
+        - Oft
+        - Immer
+      par défaut: Oft
 
-equipement . coefficient effort matériel . effort . Niedrig:
-equipement . coefficient effort matériel . effort . Mittel:
-equipement . coefficient effort matériel . effort . Maximal:
+equipement . coefficient effort matériel . effort . Nie:
+equipement . coefficient effort matériel . effort . Oft:
+equipement . coefficient effort matériel . effort . Immer:
 
 # Achat Matériel
 
