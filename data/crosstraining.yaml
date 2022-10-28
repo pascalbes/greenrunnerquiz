@@ -11,6 +11,22 @@ crosstraining:
       - winter
   unité: kgCO2e
 
+############
+## Cycling / Other
+############
+
+crosstraining . cycling:
+  icônes: 🚴‍♂️
+
+crosstraining . cycling . présent:
+  question: Cycling
+  par défaut: non
+
+crosstraining . other:
+  
+crosstraining . other . présent:
+  question: Other
+  par défaut: non
 
 ############
 ## Gym
