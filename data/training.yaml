@@ -194,13 +194,13 @@ training . daily . empreinte lieu:
 ## Outside
 
 training . daily . empreinte lieu . outside:
-  titre: Draußen (abseits der Strecke)
+  titre: Draußen (abseits der Straße)
   icônes:  🏔 
   formule: constantes . empreinte lieu . outside * hour * 365 / 7
   unité: kgCO2e
 
 training . daily . empreinte lieu . outside . hour:
-  question: Draußen (abseits der Strecke)
+  question: Draußen (abseits der Straße)
   par défaut: 0
 
 ## ontrack outdoor light
